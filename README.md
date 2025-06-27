@@ -8,7 +8,7 @@
 conda create -n agent python=3.10 -y
 conda activate agent
 ```
-12121212121222232322232322323232
+
 ## 安装依赖
 ```commandline
 pip install -r requirements.txt
