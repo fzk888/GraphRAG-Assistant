@@ -1,5 +1,6 @@
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 # 导入streamlit库，用于创建Web应用
 import streamlit as st
 # 从utils模块中导入PLATFORMS, get_embedding_models, get_kb_names函数

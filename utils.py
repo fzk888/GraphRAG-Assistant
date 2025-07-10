@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 # 导入os模块，用于操作系统相关的功能，如文件路径操作
 import os
 # 从typing模块导入Literal，用于类型注解，限制变量的取值范围
@@ -238,7 +240,7 @@ def get_kb_names():
 def get_embedding_model(
         platform_type: Literal[tuple(PLATFORMS)] = "Ollama",
         model: str = "text-embedding-ada-002",
-        base_url: str = os.getenv('OPENAI_BASE_URL'),
+        base_url: str = os.getenv('OPENAI_API_BASE'),
         api_key: str = os.getenv('OPENAI_API_KEY'),
 ):
     # 如果平台类型是Ollama

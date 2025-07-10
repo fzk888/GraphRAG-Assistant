@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 # 导入streamlit库并简写为st，streamlit是一个用于创建数据应用的Python库
 import streamlit as st
 from webui import rag_chat_page, knowledge_base_page  # , platforms_page

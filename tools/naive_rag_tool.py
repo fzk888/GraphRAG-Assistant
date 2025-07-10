@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 # 从langchain.tools.retriever模块中导入create_retriever_tool函数，用于创建检索工具
 from langchain.tools.retriever import create_retriever_tool
 # 导入os模块，用于处理文件和目录路径
